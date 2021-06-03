@@ -65,7 +65,7 @@ function setup() {
   //create the polygon
   polygon = new Polygon(130,200,30);
 
-  slingshot = new slingShot(polygon.body, {x:130, y:170});
+  slingshot = new slingShot(polygon.body, {x:80, y:220});
  
   Engine.run(engine);
 
@@ -76,6 +76,7 @@ function draw() {
 
   textSize(20);
   fill("lightyellow");
+  text("Drag the hexagon to destroy the blocks",300,30);
   
 
   ground.display();
